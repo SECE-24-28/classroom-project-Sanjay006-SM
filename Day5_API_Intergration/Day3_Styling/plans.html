@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Available Plans</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<header class="bg-blue-600 text-white p-4 flex justify-between">
+    <h1 class="text-xl font-semibold">Available Plans</h1>
+    <nav>
+        <a href="recharge.html" class="mr-4 underline">Back</a>
+        <a href="dashboard.html" class="underline">Dashboard</a>
+    </nav>
+</header>
+
+<main class="container mx-auto p-4">
+
+    <p id="plansInfo" class="text-lg font-medium mb-4"></p>
+    <p id="loading" class="text-gray-600">Loading plans...</p>
+
+    <div id="plansContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+
+</main>
+
+</body>
+</html>
