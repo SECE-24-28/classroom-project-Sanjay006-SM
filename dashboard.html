@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard - Mobile Recharge App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="dashboard" class="bg-gray-100">
+  <header class="bg-blue-600 text-white p-4">
+    <div class="container flex justify-between items-center">
+      <h1 class="text-xl font-semibold">Mobile Recharge App</h1>
+      <nav class="space-x-4">
+        <a href="recharge.html" class="underline">New Recharge</a>
+        <button id="logoutBtn" class="underline">Logout</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container py-8">
+    <h2 class="text-2xl font-semibold mb-2">Welcome, <span id="dashboardUserName"></span></h2>
+    <p class="text-sm text-gray-600 mb-6" id="dashboardUserEmail"></p>
+
+    <h3 class="text-xl font-semibold mb-3">Recharge History</h3>
+    <table class="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+      <thead class="bg-gray-100 text-left text-sm font-medium text-gray-700">
+        <tr>
+          <th class="px-4 py-2">Date</th>
+          <th class="px-4 py-2">Mobile</th>
+          <th class="px-4 py-2">Operator</th>
+          <th class="px-4 py-2">Plan</th>
+          <th class="px-4 py-2">Amount</th>
+        </tr>
+      </thead>
+      <tbody id="historyTableBody" class="text-sm text-gray-800"></tbody>
+    </table>
+
+    <p id="historyEmpty" class="mt-4 text-gray-600 hidden">
+      No recharges found. Do your first recharge!
+    </p>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

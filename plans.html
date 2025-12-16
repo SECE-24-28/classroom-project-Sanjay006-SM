@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Plans - Mobile Recharge App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="plans" class="bg-gray-100">
+  <header class="bg-blue-600 text-white p-4">
+    <div class="container flex justify-between items-center">
+      <h1 class="text-xl font-semibold">Mobile Recharge App</h1>
+      <nav class="space-x-4">
+        <a href="recharge.html" class="underline">Back</a>
+        <a href="dashboard.html" class="underline">Dashboard</a>
+        <button id="logoutBtn" class="underline">Logout</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container py-8">
+    <h2 class="text-2xl font-semibold mb-4">Available Plans</h2>
+    <p id="plansInfo" class="text-sm text-gray-700 mb-4"></p>
+    <p id="plansLoading" class="text-gray-600">Loading plans...</p>
+    <p id="plansError" class="text-red-600 text-sm hidden"></p>
+
+    <div id="plansContainer" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3"></div>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

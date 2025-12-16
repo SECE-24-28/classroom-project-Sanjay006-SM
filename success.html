@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Success - Mobile Recharge App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="success" class="bg-gray-100">
+  <header class="bg-blue-600 text-white p-4">
+    <div class="container flex justify-between items-center">
+      <h1 class="text-xl font-semibold">Mobile Recharge App</h1>
+      <nav class="space-x-4">
+        <a href="dashboard.html" class="underline">Dashboard</a>
+        <button id="logoutBtn" class="underline">Logout</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mt-10 flex justify-center">
+    <div class="w-full max-w-md bg-white shadow-md rounded-lg p-6 text-center">
+      <h2 class="text-2xl font-semibold mb-2 text-green-600">Recharge Successful!</h2>
+      <p id="successMessage" class="text-gray-700 mb-4">
+        Your mobile has been recharged successfully.
+      </p>
+      <a href="dashboard.html" class="btn-primary inline-block">Go to Dashboard</a>
+    </div>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

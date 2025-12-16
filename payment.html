@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Payment - Mobile Recharge App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="payment" class="bg-gray-100">
+  <header class="bg-blue-600 text-white p-4">
+    <div class="container flex justify-between items-center">
+      <h1 class="text-xl font-semibold">Mobile Recharge App</h1>
+      <nav class="space-x-4">
+        <a href="plans.html" class="underline">Back</a>
+        <a href="dashboard.html" class="underline">Dashboard</a>
+        <button id="logoutBtn" class="underline">Logout</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mt-10 flex justify-center">
+    <div class="w-full max-w-lg bg-white shadow-md rounded-lg p-6">
+      <h2 class="text-2xl font-semibold mb-4 text-center">Payment Summary</h2>
+      <div id="paymentSummary" class="space-y-2 mb-4 text-gray-800 text-sm"></div>
+
+      <p id="paymentError" class="text-red-600 text-sm hidden mb-2"></p>
+
+      <button id="payBtn" class="btn-primary w-full">Pay & Recharge</button>
+    </div>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
